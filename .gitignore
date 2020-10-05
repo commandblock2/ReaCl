@@ -1,0 +1,8 @@
+CMakeSettings.json
+
+out/*
+build/*
+
+.vs/*
+
+*.kdev4

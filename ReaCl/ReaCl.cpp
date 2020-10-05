@@ -2,11 +2,12 @@
 //
 
 #include "ReaCl.h"
+#include <box2d/b2_body.h>
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	b2BodyDef def;
 	return 0;
 }

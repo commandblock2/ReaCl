@@ -1,0 +1,3 @@
+[submodule "3rdParty/box2d"]
+	path = 3rdParty/box2d
+	url = https://github.com/commandblock2/box2d

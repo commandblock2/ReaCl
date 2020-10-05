@@ -14,5 +14,7 @@ target_include_directories(ReaCl PRIVATE ${Boost_INCLUDE_DIRS})
 
 target_link_directories(ReaCl PRIVATE ${SFML_LIBRARIES})
 
+target_link_libraries(Reacl PRIVATE box2d::box2d)
+
 
 # TODO: Add tests and install targets if needed.

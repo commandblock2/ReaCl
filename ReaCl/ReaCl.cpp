@@ -2,7 +2,7 @@
 //
 
 #include "ReaCl.h"
-#include <box2d/b2_body.h>
+#include <box2d/box2d.h>
 
 
 #include <SFML/Audio.hpp>
@@ -13,7 +13,10 @@ using namespace std;
 int main()
 {
 	b2BodyDef def;
-    
+    b2WeldJointDef jointdef;
+    jointdef.bodyA;
+    jointdef.bodyB;
+
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
     
     while (window.isOpen())

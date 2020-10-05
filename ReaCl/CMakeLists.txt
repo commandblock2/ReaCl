@@ -13,7 +13,7 @@ add_executable(ReaCl ${source_directory})
 lnk_deps(ReaCl)
 
 target_include_directories(ReaCl PRIVATE ${Boost_INCLUDE_DIRS})
-target_link_directories(ReaCl PRIVATE ${SFML_LIBRARIES})
+target_link_libraries(ReaCl PRIVATE FLAC OpenGL Vorbis sfml-audio sfml-graphics sfml-network sfml-system sfml-window)
 
 
 # TODO: Add tests and install targets if needed.

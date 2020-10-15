@@ -12,12 +12,17 @@ using namespace std;
 
 int main()
 {
-	b2BodyDef def;
-    b2WeldJointDef jointdef;
-    jointdef.bodyA;
-    jointdef.bodyB;
+    b2Vec2 gravity(0.0f,0.0f);
+    b2World world(gravity);
+    
 
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
+    
+    
+
+    sf::RectangleShape shape(sf::Vector2f(100.f,100.f));
+    shape.setFillColor(sf::Color(150, 50, 250));
+    shape.setRotation(4);
     
     while (window.isOpen())
     {
@@ -31,6 +36,7 @@ int main()
         }
         // Clear screen
         window.clear();
+        window.draw(shape);
         // Update the window
         window.display();
     }

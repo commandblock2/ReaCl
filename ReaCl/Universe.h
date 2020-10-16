@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <box2d/box2d.h>
+#include <SFML/Graphics.hpp>
 
 #include "Ship.h"
 
@@ -12,12 +13,15 @@ class Universe
 public:
     
 private:
-    b2World universe;
+    world_ptr universe; // Since b2World is larger than 100, 000, better to allocate from heap
     std::vector<Ship> ships;
     std::vector<Structure> other_structures;
+    
+    
+    sf::RenderWindow & window;
 
 public:
-    Universe();
+    Universe(sf::RenderWindow& render_wnd);
     
     void exec();
 

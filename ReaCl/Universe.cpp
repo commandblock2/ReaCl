@@ -1,7 +1,8 @@
 #include "Universe.h"
 
-Universe::Universe() :
-    universe(b2Vec2_zero) // For no gravity
+Universe::Universe(sf::RenderWindow & render_wnd) :
+    universe(std::make_unique<b2World>(b2Vec2_zero)), // For no gravity
+    window(render_wnd)
 {
     
 }

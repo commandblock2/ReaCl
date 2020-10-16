@@ -12,6 +12,7 @@ namespace _details
 }
 
 using body_ptr = _details::b2_pointer<b2Body>;
-using fixure_ptr = _details::b2_pointer<b2Fixture>;
+using fixure_ptr = _details::b2_pointer<b2Fixture>; 
+using world_ptr = _details::b2_pointer<b2World>;
 
 #endif

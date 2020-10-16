@@ -7,7 +7,12 @@ using namespace std;
 
 int main()
 {
+    sf::RenderWindow main_window;
     
+    {
+        Universe u(main_window);
+        u.exec();
+    }
     
 	return 0;
 }

@@ -3,6 +3,7 @@
 
 #include <vector>
 
+#include "Alias.h"
 #include "Component.h"
 
 class Structure
@@ -11,7 +12,7 @@ class Structure
 public:
     
 protected:
-    std::unique_ptr<b2Body> body;
+    body_ptr body;
     std::vector<Component> components;
 private:
     

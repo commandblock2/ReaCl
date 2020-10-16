@@ -17,10 +17,12 @@ private:
     std::vector<Structure> other_structures;
 
 public:
+    Universe();
     
+    void exec();
 
 private:
-    void step();
+    void update();
     void render();
     
 };

@@ -4,14 +4,14 @@
 #include <vector>
 
 #include "Structure.h"
+#include "IControlable.h"
 
-class Ship : Structure
+class Ship : Structure, IControlable
 {
 //data and type alias
 public:
     
 private:
-    int const faction;
 
 public:
     Ship(int const);

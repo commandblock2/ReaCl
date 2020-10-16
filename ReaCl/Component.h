@@ -1,8 +1,10 @@
 #ifndef COMPONENT
 #define COMPONENT
 
-#include <memory>
+
 #include <box2d/box2d.h>
+
+#include "Alias.h"
 
 class Component
 {
@@ -10,7 +12,7 @@ class Component
 public:
     int health;
     bool constructing = true;
-    std::unique_ptr<b2Fixture> fixure;
+    fixure_ptr fixure;
     
 private:
     

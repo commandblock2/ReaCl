@@ -10,7 +10,7 @@ int main()
     sf::RenderWindow main_window;
     
     {
-        Universe u(main_window);
+        Universe u{ main_window };
         u.exec();
     }
     

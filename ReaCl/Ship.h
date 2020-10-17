@@ -6,7 +6,7 @@
 #include "Structure.h"
 #include "IControlable.h"
 
-class Ship : Structure, IControlable
+class Ship : public Structure, public IControlable
 {
 //data and type alias
 public:

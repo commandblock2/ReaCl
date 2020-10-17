@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    sf::RenderWindow main_window;
+    sf::RenderWindow main_window(sf::VideoMode(800, 600), "SFML window");
     
     {
         Universe u{ main_window };

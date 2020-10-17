@@ -3,11 +3,12 @@
 
 #include <vector>
 #include <box2d/box2d.h>
+#include <boost/noncopyable.hpp>
 #include <SFML/Graphics.hpp>
 
 #include "Ship.h"
 
-class Universe
+class Universe : private boost::noncopyable
 {
 //data and type alias
 public:

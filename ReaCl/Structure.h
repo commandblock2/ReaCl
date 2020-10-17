@@ -7,7 +7,7 @@
 #include "Alias.h"
 #include "Component.h"
 
-class Structure : sf::Drawable
+class Structure : public sf::Drawable
 {
 //data and type alias
 public:

@@ -7,7 +7,7 @@
 
 #include "Alias.h"
 
-class Component : sf::Drawable
+class Component : public sf::Drawable
 {
 //data and type alias
 public:
@@ -16,11 +16,11 @@ public:
     fixure_ptr fixure;
     
 private:
-    //sf::Shape shape; //but is abstract, need refactor (further discussion)
+    std::unique_ptr<sf::Shape> shape;
 
 //functions
 public:
-
+    Component(std::unique_ptr<sf::Shape>);
 private:
     void draw(sf::RenderTarget&, sf::RenderStates) const override;
 };

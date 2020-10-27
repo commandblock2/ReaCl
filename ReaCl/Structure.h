@@ -4,8 +4,8 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 
-#include "Alias.h"
-#include "Component.h"
+#include "Utils/Alias.h"
+#include "Block/Component.h"
 
 class Structure : public sf::Drawable
 {

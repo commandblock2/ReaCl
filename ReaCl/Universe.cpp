@@ -4,6 +4,11 @@ Universe::Universe(sf::RenderWindow & render_wnd) :
     universe(std::make_unique<b2World>(b2Vec2_zero)), // For no gravity
     window(render_wnd)
 {
+    // kind of like main for now
+    
+    // since we need to refactor this really hard we will be needing smth.
+    
+    ships.emplace_back();
     
 }
 

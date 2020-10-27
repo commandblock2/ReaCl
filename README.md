@@ -27,10 +27,10 @@ On *nix using your favorite package manager to install SFML/Boost dev packages.
 
 Then clone the repository using 
 
-    git clone --recurse-submodules https://github.com/commandblock2/ReaCl Reacl
+    git clone --recurse-submodules https://github.com/commandblock2/ReaCl ReaCl
 
 Then build it with cmake
 
-    cd Reacl
+    cd ReaCl
     cmake ..
     make -j #with your core nums + 1

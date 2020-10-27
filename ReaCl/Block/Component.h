@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 
-#include "Alias.h"
+#include "../Utils/Alias.h"
 
 class Component : public sf::Drawable
 {

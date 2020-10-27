@@ -14,7 +14,7 @@ public:
 private:
 
 public:
-    Ship(int const);
+    
 private:
 };
 

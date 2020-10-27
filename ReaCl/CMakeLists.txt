@@ -7,10 +7,15 @@ cmake_minimum_required (VERSION 3.8)
 find_package(Boost REQUIRED)
 find_package(SFML REQUIRED audio graphics network system window)
 
-aux_source_directory(. source_directory)
-add_executable(ReaCl ${source_directory})
+aux_source_directory(. current_dir)
+
+add_executable(ReaCl ${current_dir})
+
+add_subdirectory(Block/)
+add_subdirectory(Utils/)
 
 lnk_deps(ReaCl)
+
 
 target_include_directories(ReaCl PRIVATE ${Boost_INCLUDE_DIRS})
 target_link_libraries(ReaCl PRIVATE FLAC OpenGL Vorbis sfml-audio sfml-graphics sfml-network sfml-system sfml-window)

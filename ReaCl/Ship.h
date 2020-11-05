@@ -1,21 +1,19 @@
-#ifndef SHIP
-#define SHIP
+#ifndef SHIP_H
+#define SHIP_H
+#include "block.h"
+#include <box2d/box2d.h>
+#include <SFML/Graphics.hpp>
+#include <list>
 
-#include <vector>
-
-#include "Structure.h"
-#include "IControlable.h"
-
-class Ship : public Structure, public IControlable
+class Ship
 {
-//data and type alias
-public:
-    
 private:
-
+    b2Body* this_ship;
+    std::list<Block> blocks;
 public:
-    
-private:
+    Ship(b2World* world, b2BodyDef bd);
+    void Create_block(b2FixtureDef fd, b2Vec2 v[], int32 c, sf::Color color);
+    void Render_ship(sf::RenderWindow* window);
 };
 
-#endif
+#endif // SHIP_H
